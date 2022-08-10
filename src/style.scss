@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+$boxshadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$boxyhover: 0 0 10px 5px rgba(230, 255, 110, 0.7);
+$purple: #732091;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background-color: lightGrey;
+}
+.wrapper {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    .heading {
+        margin-top: 30px;
+        text-align: center;
+        color: $purple;
+    }
+}
+h1 {
+    font-size: 20px;
+}
+h2 {
+    text-align: center;
+    font-size: 19px;
+    width: 85%;
+}
+//////holds the deck of cards
+.cardHolder {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 70%;
+    width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+}
+//////styles the cards
+//matched card
+button {
+    transition: 0.6s;
+    &:disabled {
+        background: linear-gradient(
+            180deg,
+            rgba(182, 115, 207, 0.645) 0%,
+            rgba(115, 32, 145, 0.6) 20%,
+            rgba(115, 32, 145, 0.6) 80%,
+            rgba(182, 115, 207, 0.645) 100%
+        );
+    }
+}
+.card,
+button {
+    background-color: $purple;
+    color: #fff;
+    width: 45px;
+    border-radius: 5px;
+    margin: 2px;
+    height: 45px;
+    box-shadow: $boxshadow;
+    transition: 0.7s;
+    transform-style: preserve-3d;
+    .back {
+        transform: rotateY(180deg);
+        vertical-align: middle;
+        backface-visibility: hidden;
+        //https://www.w3schools.com/cssref/css3_pr_backface-visibility.asp
+        width: 43px;
+        height: 43px;
+        padding: 5px;
+    }
+}
+.card {
+    cursor: pointer;
+    &:hover {
+        box-shadow: $boxyhover;
+    }
+}
+.animate {
+    transform: rotateY(180deg);
+}
+
+//////game deck options
+.top {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        text-align: center;
+    }
+}
+.bottom {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.miscbuttons {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $purple;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+}
+.display {
+    text-align: center;
+    padding: 4px 0;
+    font-size: 17px;
+    color: $purple;
+    height: 35px;
+    width: 180px;
+    margin: 5px 7px;
+    border: 3px solid $purple;
+    border-radius: 5px;
+    &.msg {
+        width: 80%;
+        border: none;
+        height: 21px;
+        margin-top: 2px;
+        margin-bottom: 7px;
+        font-size: 19px;
+    }
+}
+.option {
+    padding: 3px;
+    font-size: 17px;
+    border-radius: 5px;
+    color: #fff;
+    color: $purple;
+    background-color: #fff;
+    height: auto;
+    width: auto;
+    margin: 3px 7px;
+    cursor: pointer;
+    &.clicked {
+        background-color: $purple;
+        color: #fff;
+    }
+    &:hover {
+        background-color: $purple;
+        color: #fff;
+    }
+}
+//////rules and credit
+.rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1px auto;
+    width: 95%;
+    h3,
+    h4 {
+        text-align: center;
+        margin: 2px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p {
+        margin: 2px;
+    }
+    ul {
+        list-style: none;
+        margin: 5px 0 5px 10px;
+    }
+}
+.credit {
+    margin: 15px;
+    padding: 15px;
+    color: #000;
+    text-align: center;
+    background-color: lavender;
+    border: 2px solid $purple;
+    border-radius: 5px;
+    line-height: 20px;
+    a {
+        text-decoration: none;
+        color: $purple;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .smol {
+        font-size: 13px;
+    }
+}
+//////responsive to screenport adjustment
+@media screen and (min-width: 330px) {
+    .display {
+        font-size: 19px;
+    }
+    .top,
+    .miscbuttons {
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 350px) {
+    .cardHolder {
+        height: 70%;
+        width: 330px;
+    }
+    .option {
+        padding: 3px 7px;
+        font-size: 19px;
+    }
+    .card,
+    button {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        .back {
+            width: 49px;
+            height: 49px;
+        }
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .bottom {
+        flex-direction: row;
+    }
+    .cardHolder {
+        width: 430px;
+    }
+    .display {
+        width: 205px;
+    }
+    .card,
+    button {
+        width: 75px;
+        height: 75px;
+        margin: 5px;
+        .back {
+            width: 73px;
+            height: 73px;
+        }
+    }
+}
+@media screen and (min-width: 550px) {
+    .cardHolder {
+        width: 505px;
+    }
+    .card,
+    button {
+        width: 90px;
+        height: 90px;
+        margin: 5px;
+        .back {
+            width: 86px;
+            height: 86px;
+        }
+    }
+    h1 {
+        font-size: 37px;
+    }
+}
+
+@media screen and (min-width: 660px) {
+    .cardHolder {
+        height: 70%;
+        width: 640px;
+    }
+    .card,
+    button {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        .back {
+            width: 96px;
+            height: 96px;
+        }
+    }
+}
