@@ -83,6 +83,7 @@ function App() {
     }
     }, [category]);
 
+    //toggle visibility of rules
     const rules = () => {
         let currentState = rulesstate
         setDetails({...details, rulesstate: !currentState})
@@ -122,7 +123,7 @@ function App() {
                 });
                 return copy;
             });
-            //double the amount of cards, shuffle, return
+            //double the cards, shuffle, return
             let doubled = copy.concat(shuffled);
             doubled.sort(() => Math.random() - 0.5);
             doubled.map((card, i) => {
@@ -136,7 +137,7 @@ function App() {
                 return final;
             });
         }else{
-            //if playing easy, double the deck, then shuffle
+            //if playing easy, double the deck, shuffle
             let doubled = shuffled.concat(shuffled);
             doubled.sort(() => Math.random() - 0.5);
             doubled.map((card, i) => {
@@ -150,7 +151,7 @@ function App() {
                 return final;
             });
         }
-        //set the deck to play with, the duplicate to compare to
+        //set the deck to play with, then duplicate for comparison
         //end loading screen, start timer
         setDeck(final);
         setDup(final);
