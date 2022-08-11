@@ -305,7 +305,7 @@ function App() {
             </div>
             <div className='credit'>
                 <p>
-                    Created by{' '}
+                    Created by {' '}
                     <a
                         href='https://achulslander.com/'
                         target='_blank'
@@ -320,7 +320,7 @@ function App() {
                         target='_blank'
                         rel='noreferrer'
                     >
-                        See this web-app on GitHub
+                        View this project on GitHub
                     </a>
                 </p>
                 <p>
@@ -333,7 +333,7 @@ function App() {
                     </a>
                 </p>
                 <p className='smol'>
-                    All isons are from{' '}
+                    Coding icons are from {' '}
                     <a
                         target='_blank'
                         href='https://icons8.com'

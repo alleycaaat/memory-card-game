@@ -208,8 +208,8 @@ button {
     }
 }
 @media screen and (min-width: 350px) {
-    .cardHolder {
-        height: 70%;
+    .cardHolder,
+    .rules {
         width: 330px;
     }
     .option {
@@ -238,7 +238,8 @@ button {
     .bottom {
         flex-direction: row;
     }
-    .cardHolder {
+    .cardHolder,
+    .rules {
         width: 430px;
     }
     .display {
@@ -256,7 +257,8 @@ button {
     }
 }
 @media screen and (min-width: 550px) {
-    .cardHolder {
+    .cardHolder,
+    .rules {
         width: 505px;
     }
     .card,
@@ -275,8 +277,8 @@ button {
 }
 
 @media screen and (min-width: 660px) {
-    .cardHolder {
-        height: 70%;
+    .cardHolder,
+    .rules {
         width: 640px;
     }
     .card,
