@@ -42,4 +42,3 @@ export const Scoring = ({ timer, score }) => {
         </div>
     );
 };
-
