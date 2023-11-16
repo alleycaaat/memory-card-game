@@ -171,11 +171,6 @@ function App() {
 		setPicked([]);
 	};
 
-	//TODO angular matched with text AWS
-
-	//TODO need to make sure it properly waits for the db to respond, game can start without any cards but it doesn't throw an error of a missing game config
-
-	//TODO speed up the card flip, can get a solo card to think it's a match so it stays flipped
 	//** handles game being won/over
 	const gameOver = () => {
 		if (matches === count - 1) {
@@ -207,8 +202,6 @@ function App() {
 			setPicked([]);
 		}
 	};
-
-	//TODO when cards are flipped, only two cards, render all cards unclickable/disabled until check has run
 
 	//** handles card selections
 	const clicked = (card) => {
