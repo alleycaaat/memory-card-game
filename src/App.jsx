@@ -13,7 +13,7 @@ import Difficulty from './components/Difficulty';
 import CardAmount from './components/CardAmount';
 import StartBtn from './components/StartBtn';
 import Credit from './components/Credit';
-import Card from './components/Card';
+import Card from './components/Card'
 import Loading from './loading';
 
 function App() {
