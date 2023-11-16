@@ -25,7 +25,6 @@ function App() {
 	const [running, setRunning] = useState(false); //timer run status
 	const [timer, setTimer] = useState(0);
 	const [loading, setLoading] = useState(false);
-	const [thinking, setThinking] = useState(false);
 
 	const [score, setScore] = useState(0);
 	const [matches, setMatches] = useState(0);
@@ -182,7 +181,7 @@ function App() {
 	//** check if the cards match
 	const check = () => {
 		let match = picked[0].name === picked[1].name;
-		//console.log('match?',match);
+		
 		if (match) {
 			setDeck(dup);
 			setPicked([]);
@@ -198,7 +197,6 @@ function App() {
 
 			setScore((score) => score + 1);
 			setDeck(dup);
-			setThinking(false);
 			setPicked([]);
 		}
 	};
@@ -216,7 +214,6 @@ function App() {
 		setPicked(picked);
 
 		if (picked.length === 2) {
-			setThinking(true);
 			setTimeout(() => {
 				check();
 			}, 150);
@@ -248,7 +245,7 @@ function App() {
 			<Scoring timer={timer} score={score} />
 
 			<div className='display msg'>{display}</div>
-			<div className='cardHolder' disabled={thinking}>
+			<div className='cardHolder'>
 				{deck.map((card, i) => (
 					<div key={i}>
 						<Card
