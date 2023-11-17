@@ -28,6 +28,7 @@ function App() {
 
 	const [score, setScore] = useState(0);
 	const [matches, setMatches] = useState(0);
+	const [gameWon, setGameWon] = useState(false);
 
 	const tick = useRef(null);
 
@@ -55,8 +56,8 @@ function App() {
 
 		if (category !== '') {
 			setLoading(true);
-			setOrgCards([])
-		
+			setOrgCards([]);
+
 			let cards = [];
 			const promise = getCards(category);
 			promise.then(
@@ -105,6 +106,13 @@ function App() {
 
 	//** count out the card amount, send them to be shuffled
 	const countCards = () => {
+		if (gameWon) {
+			setMatches(0);
+			setScore(0);
+			setTimer(0);
+			setGameWon(false)
+		}
+		
 		let temp = [];
 		let counted;
 		temp = [...orgCards].sort(() => Math.random() - 0.5); //shuffle original array
@@ -171,13 +179,14 @@ function App() {
 		setTimer(0);
 		setDeck([]);
 		setPicked([]);
-		setOrgCards([])
+		setOrgCards([]);
 	};
 
 	//** handles game being won/over
 	const gameOver = () => {
 		if (matches === count - 1) {
 			setRunning(false);
+			setGameWon(true)
 			setDetails({ display: 'You won!' });
 		}
 	};
