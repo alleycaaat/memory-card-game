@@ -13,7 +13,7 @@ const Credit = () => {
             </p>
             <p>
                 <a
-                    href='https://github.com/alleycaaat/memory-game'
+                    href='https://github.com/alleycaaat/memory-card-game'
                     target='_blank'
                     rel='noreferrer noopener'
                 >
