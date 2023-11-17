@@ -55,6 +55,8 @@ function App() {
 
 		if (category !== '') {
 			setLoading(true);
+			setOrgCards([])
+		
 			let cards = [];
 			const promise = getCards(category);
 			promise.then(
@@ -159,15 +161,17 @@ function App() {
 		setLoading(false);
 		setRunning(true);
 	};
+
 	//** reset errything
 	const reset = () => {
 		setRunning(false);
-		setScore(0);
-		setMatches(0);
 		setDetails({ initialState });
+		setMatches(0);
+		setScore(0);
 		setTimer(0);
 		setDeck([]);
 		setPicked([]);
+		setOrgCards([])
 	};
 
 	//** handles game being won/over
@@ -181,7 +185,7 @@ function App() {
 	//** check if the cards match
 	const check = () => {
 		let match = picked[0].name === picked[1].name;
-		
+
 		if (match) {
 			setDeck(dup);
 			setPicked([]);
