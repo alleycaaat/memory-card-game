@@ -106,13 +106,14 @@ function App() {
 
 	//** count out the card amount, send them to be shuffled
 	const countCards = () => {
+		setLoading(true)
 		if (gameWon) {
 			setMatches(0);
 			setScore(0);
 			setTimer(0);
 			setGameWon(false)
 		}
-		
+
 		let temp = [];
 		let counted;
 		temp = [...orgCards].sort(() => Math.random() - 0.5); //shuffle original array
@@ -122,7 +123,6 @@ function App() {
 
 	//** handles shuffling the deck
 	const shuffleDeck = (shuffled) => {
-		setLoading(true);
 		let copy = [];
 		let final = [];
 		//if playing hard level, need to make the matching card
@@ -162,8 +162,8 @@ function App() {
 				return final;
 			});
 		}
-		//set the deck to play with, then duplicate for comparison
-		//end loading screen, start timer
+		//** set the deck to play with, then duplicate for comparison
+		//** end loading screen, start timer
 		setDeck(final);
 		setDup(final);
 		setLoading(false);
@@ -245,7 +245,6 @@ function App() {
 				<StartBtn
 					details={details}
 					setDetails={setDetails}
-					setLoading={setLoading}
 					countCards={countCards}
 				/>
 				<ResetBtn onClick={reset} />
