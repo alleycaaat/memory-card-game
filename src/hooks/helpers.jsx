@@ -4,6 +4,7 @@ import { databases } from './api';
 export const getCards = async (category) => {
     let collectionId;
     let DATABASE_ID;
+
     switch (true) {
         case category == 'programming':
             DATABASE_ID = '653c07f36886d745e028';
@@ -20,7 +21,7 @@ export const getCards = async (category) => {
         default:
             break;
     }
-
+    
     try {
         var docs = await databases.listDocuments(DATABASE_ID, collectionId);
         return docs.documents;
