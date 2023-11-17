@@ -19,7 +19,7 @@ import Loading from './loading';
 function App() {
 	const [orgCards, setOrgCards] = useState([]); //original starting card deck from server
 	const [picked, setPicked] = useState([]); //holds picked cards
-	const [dup, setDup] = useState([]); //duplicate deck to easier match comparison
+	const [dup, setDup] = useState([]); //duplicate deck for easier match comparison
 	const [deck, setDeck] = useState([]); //deck to be used for play
 
 	const [running, setRunning] = useState(false); //timer run status
@@ -43,7 +43,7 @@ function App() {
 	const [details, setDetails] = useState(initialState);
 	const { category, count, display, rulesstate, difficulty } = details;
 
-	//start things up when the category changes
+	//** start things up when the category changes
 	useEffect(() => {
 		startUp();
 	}, [category]);
@@ -196,8 +196,6 @@ function App() {
 		let match = picked[0].name === picked[1].name;
 
 		if (match) {
-			setDeck(dup);
-			setPicked([]);
 			setMatches((matches) => matches + 1);
 			gameOver();
 		} else {
@@ -209,9 +207,9 @@ function App() {
 			}, 50);
 
 			setScore((score) => score + 1);
-			setDeck(dup);
-			setPicked([]);
 		}
+		setPicked([]);
+		setDeck(dup);
 	};
 
 	//** handles card selections
