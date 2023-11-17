@@ -121,11 +121,11 @@ function App() {
 		shuffleDeck(counted);
 	};
 
-	//** handles shuffling the deck
+	//** shuffle the deck
 	const shuffleDeck = (shuffled) => {
 		let copy = [];
 		let final = [];
-		//if playing hard level, need to make the matching card
+		//** if playing hard level, need to make the matching card
 		if (difficulty === 'hard') {
 			shuffled.map((card) => {
 				copy.push({
@@ -134,7 +134,7 @@ function App() {
 				});
 				return copy;
 			});
-			//double the cards, shuffle, return
+			//** double the cards, shuffle, return
 			let doubled = copy.concat(shuffled);
 			doubled.sort(() => Math.random() - 0.5);
 			doubled.map((card, i) => {
@@ -148,7 +148,7 @@ function App() {
 				return final;
 			});
 		} else {
-			//if playing easy, double the deck, shuffle
+			//** if playing easy, double the deck, shuffle
 			let doubled = shuffled.concat(shuffled);
 			doubled.sort(() => Math.random() - 0.5);
 			doubled.map((card, i) => {
