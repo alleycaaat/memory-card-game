@@ -1,8 +1,54 @@
-# React + Vite
+<a name='top'></a>
+<div align='center'>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![last commit][last-commit]
+![issues open][issues-open]
+![github stars][stars]
 
-Currently, two official plugins are available:
+<h1><strong>Memory Game</strong></h1>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](sass-url) to create a responsive, optimized interface. Users can choose from three different card decks, two different difficulty levels, and from three card amounts.  The user clicks on any two cards and they flip over to show what their face is, if they match they stay visible, otherwise they'll flip back over.  A timer lets the user know how much time has passed and a counter shows how many incorrect guesses they've made.
+
+</div>
+
+
+[issues-open]: https://img.shields.io/github/issues/alleycaaat/memory-card-game?color=blue&logo=github
+
+[repo-size]: https://img.shields.io/github/repo-size/alleycaaat/memory-card-game?color=red&logo=github
+
+[language-count]: https://img.shields.io/github/languages/count/alleycaaat/memory-card-game?color=orange&logo=github
+
+[main-language]: https://img.shields.io/github/languages/top/alleycaaat/memory-card-game?color=yellow&logo=github
+
+[last-commit]: https://img.shields.io/github/last-commit/alleycaaat/memory-card-game?logo=github
+
+[stars]: https://img.shields.io/github/stars/alleycaaat/memory-card-game?color=purple&logo=github
+
+[linkedin]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/achulslander
+
+[product-screenshot]: images/screenshot.png
+
+[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]: https://reactjs.org/
+
+[sass]: https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white
+[sass-url]: https://sass-lang.com/
+
+[chrome]: https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white
+[chrome-url]: https://www.google.com/chrome/
+
+[github]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
+
+[codepen]: https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white
+[codepen-url]: https://codepen.io/alleycaaat
+
+[twitter]: https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white
+[twitter-url]: https://twitter.com/achulslander
+
+[hashnode]: https://img.shields.io/badge/Hashnode-2962FF?style=for-the-badge&logo=hashnode&logoColor=white
+[hashnode-url]: https://hashnode.com/@alleycaaat
+
+[discord]:https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white
+[discord-url]: https://discordapp.com/users/427569685366833174
