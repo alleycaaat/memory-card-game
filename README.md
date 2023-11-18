@@ -8,10 +8,30 @@
 <h1><strong>Memory Game</strong></h1>
 </div>
 
-Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](sass-url) to create a responsive, optimized interface. Users can choose from three different card decks, two different difficulty levels, and from three card amounts.  The user clicks on any two cards and they flip over to show what their face is, if they match they stay visible, otherwise they'll flip back over.  A timer lets the user know how much time has passed and a counter shows how many incorrect guesses they've made.
+Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](sass-url) to create a responsive, optimized interface. Users can choose from three different card decks, two different difficulty levels, and from three card amounts.  The user clicks on any two cards and they flip over to show what their face is, if they match they stay visible, otherwise they'll flip back over.  A timer lets the user know how much time has passed, and a counter shows how many incorrect guesses they've made.
+
+<details>
+  <summary>Table of Contents</summary>
+  <ul>
+    <li>
+        <a href='#about-the-project'>About The Project</a>
+        </li>
+</ul>
+</details>
+
+## <strong>About The Project</strong>
+
+![A web app titled Memory Game with options to select a card type, amount and difficulty level](./src/img/screenshot.png)
+
+<br>
+
+<div align='center'>
+
+![repo size][repo-size]
+![language count][language-count]
+![main language][main-language]
 
 </div>
-
 
 [issues-open]: https://img.shields.io/github/issues/alleycaaat/memory-card-game?color=blue&logo=github
 
