@@ -16,6 +16,10 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
     <li>
         <a href='#about-the-project'>About The Project</a>
         </li>
+         <ul>
+        <li><a href='#current-features'>Current Features</a></li>
+        <li><a href='#updates-from-v1'>Updates from V1</a></li>
+        </ul>
 </ul>
 </details>
 
@@ -32,6 +36,18 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
 ![main language][main-language]
 
 </div>
+
+### <strong>Current Features</strong>
+- Users can pick a normal or difficult game
+- Animation shows card flip
+- Checks prevent game from starting without deck, category and card count selections
+
+### <strong>Updates from V1</strong>
+- Switched database host
+- Create new card faces for improved contrast
+- Added utilities and constants
+- Created more components for much cleaner code
+
 
 [issues-open]: https://img.shields.io/github/issues/alleycaaat/memory-card-game?color=blue&logo=github
 
