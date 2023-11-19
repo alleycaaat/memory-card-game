@@ -76,6 +76,13 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
 <p align='right'>(<a href='#top'>back to top</a>)</p>
 
 
+## <strong>Feedback</strong>
+
+As my cats and dog aren't too keen on providing input on my projects, feel free to [send me a message](https://www.achulslander.com/#contact) if you have some constructive comments, or [file an issue](https://github.com/alleycaaat/memory-card-game/issues/new) if I really buggered something up.
+
+<p align='right'>(<a href='#top'>back to top</a>)</p>
+
+
 [Vercel]: https://vercelbadge.vercel.app/api/alleycaaat/memory-card-game
 
 [issues-open]: https://img.shields.io/github/issues/alleycaaat/memory-card-game?color=blue&logo=github
