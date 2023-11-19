@@ -1,6 +1,7 @@
 <a name='top'></a>
 <div align='center'>
 
+![Vercel][Vercel]
 ![last commit][last-commit]
 ![issues open][issues-open]
 ![github stars][stars]
@@ -63,6 +64,19 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
 [![Chrome][chrome]][chrome-url]
 <p align='right'>(<a href='#top'>back to top</a>)</p>
 
+### <strong>Dependencies</strong>
+***
+- [react](https://www.npmjs.com/package/react)
+- [react-dom](https://www.npmjs.com/package/react-dom)
+- [vite](https://www.npmjs.com/package/vite)
+- [sass](https://www.npmjs.com/package/sass)
+- [appwrite](https://www.npmjs.com/package/appwrite)
+
+
+<p align='right'>(<a href='#top'>back to top</a>)</p>
+
+
+[Vercel]: https://vercelbadge.vercel.app/api/alleycaaat/memory-card-game
 
 [issues-open]: https://img.shields.io/github/issues/alleycaaat/memory-card-game?color=blue&logo=github
 
