@@ -14,16 +14,15 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
 <details>
   <summary>Table of Contents</summary>
   <ul>
-    <li>
-        <a href='#about-the-project'>About The Project</a>
-        </li>
-         <ul>
-        <li><a href='#current-features'>Current Features</a></li>
-        <li><a href='#updates-from-v1'>Updates from V1</a></li>
-        <li><a href='#built-with'>Built With</a></li>
-        <li><a href='#tested-on'>Tested On</a></li>
+        <li><a href='#about-the-project'>About The Project</a></li>
+        <ul>
+            <li><a href='#current-features'>Current Features</a></li>
+            <li><a href='#updates-from-v1'>Updates from V1</a></li>
+            <li><a href='#built-with'>Built With</a></li>
+            <li><a href='#tested-on'>Tested On</a></li>
         </ul>
-</ul>
+        <li><a href='#feedback'>Feedback</a></li>
+    </ul>
 </details>
 
 ## <strong>About The Project</strong>
