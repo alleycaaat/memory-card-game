@@ -22,6 +22,8 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
             <li><a href='#tested-on'>Tested On</a></li>
         </ul>
         <li><a href='#feedback'>Feedback</a></li>
+        <li><a href='#contact'>Contact</a></li>
+        <li><a href='#acknowledgements'>Acknowledgements</a></li>
     </ul>
 </details>
 
@@ -78,6 +80,29 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
 ## <strong>Feedback</strong>
 
 As my cats and dog aren't too keen on providing input on my projects, feel free to [send me a message](https://www.achulslander.com/#contact) if you have some constructive comments, or [file an issue](https://github.com/alleycaaat/memory-card-game/issues/new) if I really buggered something up.
+
+<p align='right'>(<a href='#top'>back to top</a>)</p>
+
+## <strong>Contact</strong>
+
+<div align='center'>
+AC Hulslander - [Send me a message](https://www.achulslander.com/#contact)
+
+[![GitHub][github]](https://github.com/alleycaaat/)
+[![hashnode][hashnode]][hashnode-url]
+[![linkedin][linkedin]][linkedin-url]
+[![discord][discord]][discord-url]
+[![codepen][codepen]][codepen-url]
+[![twitter][twitter]][twitter-url]
+</div>
+
+<p align='right'>(<a href='#top'>back to top</a>)</p>
+
+## <strong>Acknowledgements</strong>
+
+- [Img Shields](https://shields.io/)
+- [Appwrite docs](https://appwrite.io/docs)
+
 
 <p align='right'>(<a href='#top'>back to top</a>)</p>
 
