@@ -29,7 +29,7 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
 
 ## <strong>About The Project</strong>
 
-![A web app titled Memory Game with options to select a card type, amount and difficulty level](./src/img/screenshot.png)
+![A web app titled Memory Game with options to select a card type, amount and difficulty level](./src/assets/screenshot.png)
 
 <br>
 
