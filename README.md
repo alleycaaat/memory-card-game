@@ -86,6 +86,7 @@ As my cats and dog aren't too keen on providing input on my projects, feel free 
 ## <strong>Contact</strong>
 
 <div align='center'>
+
 AC Hulslander - [Send me a message](https://www.achulslander.com/#contact)
 
 [![GitHub][github]](https://github.com/alleycaaat/)
