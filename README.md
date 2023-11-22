@@ -59,7 +59,6 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
 [![React][react.js]][react-url]
 [![Sass][sass]][sass-url]
 
-
 ### <strong>Tested On</strong>
 
 [![Chrome][chrome]][chrome-url]
@@ -72,7 +71,6 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
 - [vite](https://www.npmjs.com/package/vite)
 - [sass](https://www.npmjs.com/package/sass)
 - [appwrite](https://www.npmjs.com/package/appwrite)
-
 
 <p align='right'>(<a href='#top'>back to top</a>)</p>
 
