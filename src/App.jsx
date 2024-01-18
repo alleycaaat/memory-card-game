@@ -46,6 +46,7 @@ function App() {
 	//** start things up when the category changes
 	useEffect(() => {
 		startUp();
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [category]);
 
 	//** when a category is selected, get that deck and format the info into an array
