@@ -25,7 +25,6 @@ export const getCards = async (category) => {
 
     try {
         var docs = await databases.listDocuments(DATABASE_ID, collectionId);
-        console.log('docs',docs.documents);
         return docs.documents;
     } catch (e) {
         console.log('get cards error:', e);
