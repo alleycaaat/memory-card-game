@@ -4,12 +4,12 @@ import { databases } from './api';
 export const getCards = async (category) => {
     let collectionId;
     let DATABASE_ID;
-    const DB = '653c07f36886d745e028'
+    const DB = '6542ac00dbf00f97c906'
 
     switch (true) {
         case category == 'programming':
             DATABASE_ID = DB;
-            collectionId = '653c0af237cb305d0e3f';
+            collectionId = '65aac74e44bc9b59f23b';
             break;
         case category == 'colors':
             DATABASE_ID = DB;
@@ -17,7 +17,7 @@ export const getCards = async (category) => {
             break;
         case category == 'math':
             DATABASE_ID = DB;
-            collectionId = '65aac74e44bc9b59f23b';
+            collectionId = '6542ac05a9938ee0abe8';
             break;
         default:
             break;
@@ -25,6 +25,7 @@ export const getCards = async (category) => {
 
     try {
         var docs = await databases.listDocuments(DATABASE_ID, collectionId);
+        console.log('docs',docs.documents);
         return docs.documents;
     } catch (e) {
         console.log('get cards error:', e);
