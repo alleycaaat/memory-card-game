@@ -47,10 +47,10 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
 - Checks prevent game from starting without deck, category and card count selections
 
 ### <strong>Updates from V1</strong>
-- Switched database host
+- Switched database host from fauna to appwrite
 - Create new card faces for improved contrast
 - Added utilities and constants
-- Created more components for much cleaner code
+- Created more components for cleaner code
 
 <br>
 
@@ -62,6 +62,8 @@ Memory Game is a Jamstack web-app developed using [React](react-url) and [SCSS](
 ### <strong>Tested On</strong>
 
 [![Chrome][chrome]][chrome-url]
+[![Opera][opera]][opera-url]
+
 <p align='right'>(<a href='#top'>back to top</a>)</p>
 
 ### <strong>Dependencies</strong>
@@ -132,6 +134,9 @@ AC Hulslander - [Send me a message](https://www.achulslander.com/#contact)
 
 [chrome]: https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white
 [chrome-url]: https://www.google.com/chrome/
+
+[opera]: 	https://img.shields.io/badge/Opera-FF1B2D?style=for-the-badge&logo=Opera&logoColor=white
+[opera-url]: https://www.opera.com/download
 
 [github]: https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white
 
