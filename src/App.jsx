@@ -31,7 +31,6 @@ function App() {
 	const [gameWon, setGameWon] = useState(false);
 
 	const tick = useRef(null);
-
 	const initialState = {
 		category: '',
 		difficulty: '',
